@@ -45,14 +45,14 @@ export class Home {
     this.openEditForm();
   }
 
-  openEditForm() {
-    this.showFooEditForm = true;
-    setTimeout(() => { $("#foo").focus(); }, 500);
-  }
-
   changeActive(foo) {
     this.foo = foo;
     this.save();
+  }
+
+  openEditForm() {
+    this.showFooEditForm = true;
+    setTimeout(() => { $("#foo").focus(); }, 500);
   }
 
   async save() {
